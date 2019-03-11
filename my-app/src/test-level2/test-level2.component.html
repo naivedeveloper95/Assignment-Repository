@@ -1,0 +1,23 @@
+<ng-container *ngIf="ordersUpto2Rows.length > 0;">
+  <div class="grid-container">
+    <ng-container *ngFor="let item of ordersUpto2Rows">
+      <div>
+        {{ item.TYPE }}
+        <br>
+        {{ item.articleFrom }}
+        <br>
+        {{ item.description }}
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
+<ng-container *ngIf="checkRows; else elseCheckTemplate">
+  <div class="alignbutton">
+    <button class="button" (click)="showMore()">Load More</button>
+  </div>
+</ng-container>
+<ng-template #elseCheckTemplate>
+  <div class="noMoreItems">
+    <h2>No more items!</h2>
+  </div>
+</ng-template>

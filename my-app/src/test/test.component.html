@@ -1,0 +1,18 @@
+<ng-container *ngIf="dataToDisplay.length > 0; else elseTemplate">
+  <div class="grid-container">
+    <ng-container *ngFor="let item of dataToDisplay">
+      <div>
+        {{ item.TYPE }}
+        <br>
+        {{ item.articleFrom }}
+        <br>
+        {{ item.description }}
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
+<ng-template #elseTemplate>
+  <div class="new-grid-container">
+    <div class="item1">No Data Found! Please give us a moment. We are trying to fix this ASAP!</div>
+  </div>
+</ng-template>

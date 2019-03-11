@@ -1,0 +1,53 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 49.75%;
+  grid-gap: 2px;
+  background-color: rgb(154, 154, 155);
+  padding: 2px;
+}
+
+.new-grid-container {
+  display: grid;
+  grid-template-columns: 49.75% 25% 25%;
+  grid-gap: 2px;
+  background-color: rgb(154, 154, 155);
+  padding: 2px;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.new-grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.alignbutton {
+  margin-top: 1%;
+  text-align: right;
+}
+
+.noMoreItems {
+  margin-top: 1%;
+  text-align: center;
+}
