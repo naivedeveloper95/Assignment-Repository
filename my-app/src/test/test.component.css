@@ -1,33 +1,33 @@
 .container {
-  margin: 10%;
+    margin: 10%;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 25% 25% 49.75%;
-  grid-gap: 2px;
-  background-color: rgb(154, 154, 155);
-  padding: 1px;
+    display: grid;
+    grid-template-columns: 25% 25% 49.75%;
+    grid-gap: 2px;
+    background-color: rgb(154, 154, 155);
+    padding: 1px;
 }
 
 .new-grid-container {
-  display: grid;
-  grid-template-columns: 49.75% 25% 25%;
-  grid-gap: 2px;
-  background-color: rgb(154, 154, 155);
-  padding: 2px;
+    display: grid;
+    grid-template-columns: 49.75% 25% 25%;
+    grid-gap: 2px;
+    background-color: rgb(154, 154, 155);
+    padding: 2px;
 }
 
 .grid-container>div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
 
 .new-grid-container>div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
