@@ -48,14 +48,14 @@ export class Test implements Resolve<any> {
     getOrders(): Promise<any> {
         return new Promise((resolve, reject) => {
             this._httpClient
-                // .get(
-                // 	'https://s3-ap-southeast-1.amazonaws.com/takehomeproject/feed.json',
-                // )
                 .get(
-                    'https://static.sportskeeda.com/takehomeproject/feed.json',
-
-                    // Doesn't work on this url, it gives cors error. Setup proxy on angular is a possible fix or work around.
+                	'https://s3-ap-southeast-1.amazonaws.com/takehomeproject/feed.json',
                 )
+//                 .get(
+//                     'https://static.sportskeeda.com/takehomeproject/feed.json',
+
+//                     // Doesn't work on this url, it gives cors error. Setup proxy on angular is a possible fix or work around.
+//                 )
                 .subscribe((response: any) => {
                     this.orders = response.data;
                     this.onOrdersChanged.next(this.orders);
