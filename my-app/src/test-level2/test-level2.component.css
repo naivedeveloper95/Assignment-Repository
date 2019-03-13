@@ -1,53 +1,42 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 25% 25% 49.75%;
     grid-gap: 2px;
-    background-color: rgb(154, 154, 155);
-    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
 }
 
-.new-grid-container {
-    display: grid;
-    grid-template-columns: 49.75% 25% 25%;
-    grid-gap: 2px;
-    background-color: rgb(154, 154, 155);
-    padding: 2px;
-}
-
-.grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
+.grid-item {
+    background-color: rgba(211, 202, 202, 0.8);
+    border: 1px snow rgba(0, 0, 0, 0.8);
+    padding: 20px;
     font-size: 30px;
+    min-height: 300px;
+    min-width: auto;
+    opacity: .5;
+    text-align: center;
 }
 
-.new-grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+.grid-container:nth-child(odd) {
+    grid-template-columns: 25% 25% 50%;
+}
+
+.grid-container:nth-child(even) {
+    grid-template-columns: 50% 25% 25%;
 }
 
 .button {
-    background-color: #4CAF50;
-    /* Green */
+    background-color: rgb(85, 135, 163);
     border: none;
     color: white;
     padding: 15px 32px;
-    border-radius: 4px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
 }
 
 .alignbutton {
-    margin-top: 1%;
-    text-align: right;
-}
-
-.noMoreItems {
-    margin-top: 1%;
     text-align: center;
 }

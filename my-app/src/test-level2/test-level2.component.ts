@@ -10,7 +10,7 @@ export class TestLevel2Component {
     checkRows: boolean = true;
     dataToDisplay: Array<any> = [];
     ordersUpto2Rows: Array<any> = [];
-    loadRows: number = 5;
+    loadRows: number = 1;
     constructor(private test: Test) {
         this.getDataToDisplay();
     }
@@ -29,8 +29,8 @@ export class TestLevel2Component {
     showMore() { /* for Load More button */
         this.checkRows = this.loadRows < this.dataToDisplay.length ? true : false;
         if (this.loadRows <= this.dataToDisplay.length) {
-            if ((this.dataToDisplay.length - this.loadRows) >= 6) {
-                this.loadRows = this.loadRows + 6; //changing the n value in for loop
+            if ((this.dataToDisplay.length - this.loadRows) >= 2) {
+                this.loadRows = this.loadRows + 2; //changing the n value in for loop
             } else {
                 this.loadRows = this.loadRows + (this.dataToDisplay.length - this.loadRows); //changing the n value in for loop
             }

@@ -1,12 +1,8 @@
 <ng-container *ngIf="ordersUpto2Rows.length > 0;">
-    <div class="grid-container">
-        <ng-container *ngFor="let item of ordersUpto2Rows">
-            <div>
-                {{ item.TYPE }}
-                <br> {{ item.articleFrom }}
-                <br> {{ item.description }}
-            </div>
-        </ng-container>
+    <div class="grid-container" *ngFor="let item of ordersUpto2Rows">
+        <div class="grid-item">{{ item.TYPE }}</div>
+        <div class="grid-item">{{ item.articleFrom }}</div>
+        <div class="grid-item">{{ item.description }}</div>
     </div>
 </ng-container>
 <ng-container *ngIf="checkRows; else elseCheckTemplate">
@@ -15,7 +11,7 @@
     </div>
 </ng-container>
 <ng-template #elseCheckTemplate>
-    <div class="noMoreItems">
+    <div class="alignbutton">
         <h2>No more items!</h2>
     </div>
 </ng-template>
