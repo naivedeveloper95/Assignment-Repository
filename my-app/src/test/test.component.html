@@ -1,6 +1,8 @@
 <ng-container *ngIf="dataToDisplay.length > 0; else elseTemplate">
 	<div class="grid-container" *ngFor="let item of dataToDisplay">
-		<div class="grid-item">{{ item.TYPE }}</div>
+		<div class="grid-item">
+			<h1>{{ item.title }}</h1>
+		</div>
 		<div class="grid-item">{{ item.articleFrom }}</div>
 		<div class="grid-item">{{ item.description }}</div>
 	</div>

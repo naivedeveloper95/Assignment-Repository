@@ -12,7 +12,7 @@
 	font-size: 30px;
 	min-height: 300px;
 	min-width: auto;
-	opacity: .5;
+	opacity: 0.5;
 	text-align: center;
 }
 
@@ -22,4 +22,8 @@
 
 .grid-container:nth-child(even) {
 	grid-template-columns: 50% 25% 25%;
+}
+h1 {
+	font-size: 35px;
+	font-weight: 600;
 }

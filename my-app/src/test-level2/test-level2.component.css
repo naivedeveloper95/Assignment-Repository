@@ -1,42 +1,47 @@
 .grid-container {
-    display: grid;
-    grid-gap: 2px;
-    background-color: rgb(255, 255, 255);
-    padding: 1px;
+	display: grid;
+	grid-gap: 2px;
+	background-color: rgb(255, 255, 255);
+	padding: 1px;
 }
 
 .grid-item {
-    background-color: rgba(211, 202, 202, 0.8);
-    border: 1px snow rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    min-height: 300px;
-    min-width: auto;
-    opacity: .5;
-    text-align: center;
+	background-color: rgba(211, 202, 202, 0.8);
+	border: 1px snow rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	min-height: 300px;
+	min-width: auto;
+	opacity: 0.5;
+	text-align: center;
 }
 
 .grid-container:nth-child(odd) {
-    grid-template-columns: 25% 25% 50%;
+	grid-template-columns: 25% 25% 50%;
 }
 
 .grid-container:nth-child(even) {
-    grid-template-columns: 50% 25% 25%;
+	grid-template-columns: 50% 25% 25%;
 }
 
 .button {
-    background-color: rgb(85, 135, 163);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+	background-color: rgb(85, 135, 163);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 .alignbutton {
-    text-align: center;
+	text-align: center;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: 600;
 }
