@@ -1,6 +1,6 @@
-# Assignment-Repository
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e7fd9d4a1ab643589f261f2e3653daf3)](https://app.codacy.com/manual/naivedeveloper95/Assignment-Repository?utm_source=github.com&utm_medium=referral&utm_content=naivedeveloper95/Assignment-Repository&utm_campaign=Badge_Grade_Dashboard)
+
+# Assignment-Repository
 
 ################################################
 
